@@ -1,0 +1,11 @@
+.wrapper {
+    max-width: 39.875rem; /* 638px */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.taskList {
+    margin-top: 1.5rem;
+}

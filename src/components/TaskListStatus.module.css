@@ -1,0 +1,37 @@
+.wrapper {
+    margin-top: 4rem;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.info__created, .info__completed {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info__created strong {
+    color: var(--blue-300);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.info__completed strong {
+    color: var(--purple-300);
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+.info span {
+    background: var(--gray-400);
+    color: var(--gray-200);
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 15px;
+    padding: 2px 8px;
+    border-radius: 999px;
+}

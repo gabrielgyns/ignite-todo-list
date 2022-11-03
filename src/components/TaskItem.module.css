@@ -1,0 +1,77 @@
+.task {
+    background: var(--gray-500);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.75rem;
+
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--gray-400);
+}
+
+.task + .task {
+    margin-top: 0.75rem;
+}
+
+.task > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+/* 
+    Checkbox style - Caio Vinícius
+    https://app.rocketseat.com.br/h/forum/react-js/28b7a7eb-63db-4456-b669-d78fc54de7a5
+*/
+.task input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    background: var(--gray-500);
+    border: 2px solid var(--blue-300);
+    border-radius: 50%;
+    padding: 0.45rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    transition: border 0.2s, color 0.4s;
+}
+
+.task input[type="checkbox"]:checked {
+    border: 2px solid var(--purple-500);
+    background: var(--purple-500) url("../assets/checked.svg") center no-repeat;
+}
+
+.task p {
+    max-width: 33.75rem;
+    margin-top: -2px;
+    line-height: 1.4;
+    font-size: 0.875rem;
+    overflow-wrap: break-word;
+}
+
+.taskNotComplete {
+    color: var(--gray-100);
+}
+
+.taskComplete {
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.task button {
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+
+    transition: color 0.1s;
+}
+
+.task button:hover {
+    color: var(--red-500);
+}

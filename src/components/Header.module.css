@@ -1,0 +1,9 @@
+.header {
+    background: var(--gray-700);
+    display: flex;
+    justify-content: center;
+}
+
+.header img {
+    margin: 4.5rem 0 5rem 0;
+}
